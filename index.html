@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth overflow-x-hidden">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>税理士法人・会計事務所 就職面談会 2026 | 資格の大原</title>
+    <meta name="description" content="2026年8月8日開催。税理士業界への就職・転職を目指す方のための合同説明会。未経験歓迎、キャリア相談可能。">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    
+    <style>
+        .font-gothic { font-family: 'Noto Sans JP', sans-serif; }
+        /* 参加予定事務所のグラデーション用 */
+        .firms-fade-overlay {
+            background: linear-gradient(to bottom, rgba(240, 253, 250, 0) 0%, rgba(240, 253, 250, 1) 100%);
+            transition: opacity 0.4s ease;
+        }
+        .scroll-fade {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .scroll-fade.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body class="antialiased font-gothic bg-teal-50 text-gray-800 leading-relaxed overflow-x-hidden">
+
+    <!-- Header -->
+    <header id="mainHeader" class="p-4 md:p-6 flex justify-between items-center fixed top-0 w-full z-50 bg-transparent text-gray-800 transition-all duration-300 border-b border-transparent">
+        <div class="flex justify-between items-center w-full max-w-[1600px] mx-auto min-w-0 gap-2">
+            <h1 class="text-[11px] sm:text-xs md:text-base lg:text-lg font-black tracking-wide flex items-center gap-2 md:gap-3">
+                <img src="images/ohararogo.jpg" alt="資格の大原" class="h-6 md:h-8 lg:h-9 object-contain shrink-0">
+                <span class="leading-snug"><span class="inline-block">税理士法人・会計事務所</span> <span class="inline-block">就職面談会</span><wbr> <span class="inline-block">2026summer【大阪会場】</span></span>
+            </h1>
+            <a href="https://forms.gle/hx4RHBvybdSt4Qtb8" target="_blank" class="hidden md:flex shrink-0 items-center gap-1.5 bg-teal-600 text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-md hover:bg-teal-700 hover:shadow-lg transition-all hover:-translate-y-0.5 border border-transparent whitespace-nowrap">
+                参加申し込み <span class="material-icons-round text-base">open_in_new</span>
+            </a>
+            <!-- モバイル向け参加申し込みボタン -->
+            <a href="https://forms.gle/hx4RHBvybdSt4Qtb8" target="_blank" class="md:hidden flex shrink-0 items-center gap-1 bg-teal-600 text-white px-4 py-2 rounded-full text-xs font-bold shadow-md hover:bg-teal-700 transition-colors whitespace-nowrap">
+                参加 <span class="material-icons-round text-sm">open_in_new</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[100svh] w-full flex items-center overflow-hidden pt-[72px] md:pt-[88px]">
+        <!-- フルスクリーン背景画像 -->
+        <div class="absolute inset-0 z-0">
+            <!-- object-rightで人物(右側)を維持しつつ、画像全体を引き延ばす -->
+            <img src="images/Confident Woman in Motion.png" alt="Confident Woman in Motion" onerror="this.src='https://images.unsplash.com/photo-1590400589816-4176717a6c9d?auto=format&fit=crop&q=80&w=1200&h=800'" class="w-full h-full object-cover object-[70%_top] md:object-[100%_25%]">
+            <!-- 左側のテキスト視認性を確保するためのグラデーション -->
+            <div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-white/70 via-white/40 md:from-white/80 md:via-white/40 to-transparent z-0"></div>
+        </div>
+        
+        <!-- コンテンツエリア（最大幅1200pxのコンテナで左寄せ） -->
+        <div class="relative z-10 w-full max-w-[1200px] mx-auto px-6 md:px-12 lg:px-24">
+            
+            <!-- キャッチ画像: スマホは左上、PCは右下 -->
+            <img src="images/catch.png" alt="Catch" class="absolute z-20 w-[180px] sm:w-[210px] md:w-[300px] lg:w-[360px] xl:w-[400px] top-4 sm:top-2 md:top-auto md:bottom-6 md:left-auto md:-right-4 lg:-right-10 object-contain pointer-events-none drop-shadow-2xl opacity-95" onerror="this.style.display='none'">
+
+            <div class="max-w-xl lg:max-w-2xl pt-56 sm:pt-64 pb-16 sm:pb-24 md:py-20 lg:py-24 md:-ml-6 lg:-ml-12 relative z-30">
+                <h2 class="text-[32px] sm:text-4xl md:text-6xl lg:text-7xl font-black leading-[1.2] mb-3 md:mb-8 break-keep tracking-tight text-gray-800 drop-shadow-sm">
+                    税理士業界での<br>新たなキャリアを、<br><span class="text-teal-600">ここから。</span>
+                </h2>
+                <p class="text-gray-800 md:text-gray-700 font-bold text-sm md:text-lg leading-relaxed max-w-sm mb-5 md:mb-10 break-keep drop-shadow-md pb-2 md:p-0">
+                    業界最大級の合同説明会。<br>あなたのキャリアを変える出会いが、きっと見つかる。
+                </p>
+                <div class="mt-0 md:mt-2 text-left">
+                    <a href="https://forms.gle/hx4RHBvybdSt4Qtb8" target="_blank" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-teal-600 text-white rounded-full font-bold text-base md:text-lg hover:bg-cyan-500 shadow-[0_10px_20px_-10px_rgba(13, 148, 136,0.8)] hover:shadow-2xl hover:-translate-y-1 transition-all group border border-transparent">
+                        参加申し込み（無料） <span class="material-icons-round group-hover:translate-x-1 transition-transform">open_in_new</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 hidden sm:flex flex-col items-center animate-bounce text-teal-600 opacity-80 z-20">
+            <span class="text-[10px] font-bold tracking-widest uppercase mb-1 drop-shadow-md">Scroll</span>
+            <span class="material-icons-round text-xl drop-shadow-md">keyboard_arrow_down</span>
+        </div>
+    </section>
+
+    <!-- メリット Section -->
+    <section class="scroll-fade py-24 px-6 md:px-12 lg:px-24 bg-white relative z-10 -mt-6 rounded-t-[2.5rem] border-t border-teal-50 shadow-[0_-10px_40px_-15px_rgba(0,0,0,0.05)]">
+        <div class="max-w-[1200px] mx-auto">
+            <div class="text-left mb-16 md:mb-20">
+                <h3 class="text-3xl md:text-4xl lg:text-5xl font-black leading-tight break-keep text-gray-800 mb-6 tracking-tight"><span class="block text-teal-600 font-black text-sm md:text-base tracking-widest uppercase mb-2">ABOUT</span>就職面談会って？</h3>
+                <p class="text-gray-500 text-sm md:text-base lg:text-lg leading-relaxed">税理士法人・会計事務所が出展する各ブースにて、個別面談ができるイベントです。<br class="hidden md:block">仕事内容や就業環境について理解を深めたり、そのまま採用選考に応募することも可能です。</p>
+            </div>
+        
+        <!-- 階段状(mt-12など)を廃止し、揃えるためにh-fullを活用 -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 lg:gap-12">
+            <div class="h-full p-6 md:p-8 lg:p-10 bg-teal-50/30 border border-teal-50 rounded-3xl shadow-sm hover:shadow-md transition-shadow delay-75 group flex flex-col items-center md:items-start text-center md:text-left">
+                <div class="w-16 h-16 rounded-2xl bg-white flex items-center justify-center mb-6 text-teal-400 group-hover:bg-teal-600 group-hover:text-white transition-colors shadow-sm shrink-0">
+                    <span class="material-icons-round text-3xl">compare_arrows</span>
+                </div>
+                <h4 class="text-xl md:text-2xl font-black mb-4 tracking-tight text-gray-800">一度に比較できる</h4>
+                <p class="text-gray-500 text-sm md:text-base leading-relaxed">税理士法人・会計事務所が多数参加。それぞれの強みや雰囲気を直接比較して、自分に合う職場を見つけられます。</p>
+            </div>
+
+            <div class="h-full p-6 md:p-8 lg:p-10 bg-teal-50/30 border border-teal-50 rounded-3xl shadow-sm hover:shadow-md transition-shadow delay-75 group flex flex-col items-center md:items-start text-center md:text-left">
+                <div class="w-16 h-16 rounded-2xl bg-white flex items-center justify-center mb-6 text-teal-400 group-hover:bg-teal-600 group-hover:text-white transition-colors shadow-sm shrink-0">
+                    <span class="material-icons-round text-3xl">record_voice_over</span>
+                </div>
+                <h4 class="text-xl md:text-2xl font-black mb-4 tracking-tight text-gray-800">リアルな声が聞ける</h4>
+                <p class="text-gray-500 text-sm md:text-base leading-relaxed">Webサイトや求人情報だけでは分からない、所長や先輩所員の「生の声」を聞くチャンス。</p>
+            </div>
+
+            <div class="h-full p-6 md:p-8 lg:p-10 bg-teal-50/30 border border-teal-50 rounded-3xl shadow-sm hover:shadow-md transition-shadow delay-75 group flex flex-col items-center md:items-start text-center md:text-left">
+                <div class="w-16 h-16 rounded-2xl bg-white flex items-center justify-center mb-6 text-teal-400 group-hover:bg-teal-600 group-hover:text-white transition-colors shadow-sm shrink-0">
+                    <span class="material-icons-round text-3xl">school</span>
+                </div>
+                <h4 class="text-xl md:text-2xl font-black mb-4 tracking-tight text-gray-800">未経験でも安心</h4>
+                <p class="text-gray-500 text-sm md:text-base leading-relaxed">資格勉強中の方や業界未経験の方も歓迎。アドバイザーへのキャリア相談も可能ですので、まずは話を聞くだけでもOKです。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- こんな方におすすめ Section -->
+    <section class="scroll-fade py-24 px-6 md:px-12 lg:px-24 bg-teal-50/50">
+        <div class="max-w-[1200px] mx-auto flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
+            <div class="lg:w-2/5 text-left shrink-0">
+                <h3 class="text-3xl md:text-4xl lg:text-5xl font-black leading-tight tracking-tight mb-6 text-gray-800"><span class="block text-teal-600 font-black text-sm md:text-base tracking-widest uppercase mb-2">Target Audience</span>こんな方におすすめ</h3>
+                <p class="text-gray-500 text-sm md:text-base leading-relaxed">税理士業界でキャリアを考えるすべての方へ。<br class="hidden lg:block">資格や経験の有無に関わらず、第一歩を踏み出す<br class="hidden lg:block">絶好の機会です。</p>
+            </div>
+            <div class="lg:w-3/5 w-full bg-white border border-teal-100 p-8 md:p-12 shadow-md rounded-3xl">
+                <ul class="flex flex-col gap-6">
+                    <li class="flex items-start gap-4">
+                        <div class="bg-teal-100 rounded-full p-1 mt-0.5"><span class="material-icons-round text-teal-600 text-2xl shrink-0 block">check</span></div>
+                        <p class="text-base sm:text-lg md:text-xl font-bold text-gray-800 pt-1 leading-snug whitespace-nowrap sm:whitespace-normal tracking-tighter sm:tracking-normal">税理士業界で働きたい学生の方<span class="text-[13px] sm:text-sm text-gray-400 font-normal block mt-1 whitespace-normal tracking-normal">（新卒・既卒問わず）</span></p>
+                    </li>
+                    <li class="border-t border-teal-50 pt-6 flex items-start gap-4">
+                        <div class="bg-teal-100 rounded-full p-1 mt-0.5"><span class="material-icons-round text-teal-600 text-2xl shrink-0 block">check</span></div>
+                        <p class="text-base sm:text-lg md:text-xl font-bold text-gray-800 pt-1 leading-snug whitespace-nowrap sm:whitespace-normal tracking-tighter sm:tracking-normal">転職をお考えの社会人の方</p>
+                    </li>
+                    <li class="border-t border-teal-50 pt-6 flex items-start gap-4">
+                        <div class="bg-teal-100 rounded-full p-1 mt-0.5"><span class="material-icons-round text-teal-600 text-2xl shrink-0 block">check</span></div>
+                        <p class="text-base sm:text-lg md:text-xl font-bold text-gray-800 pt-1 leading-snug whitespace-nowrap sm:whitespace-normal tracking-tighter sm:tracking-normal">今後の活動に備えて情報収集したい方</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 参加者の声 Section -->
+    <section class="scroll-fade py-24 px-6 md:px-12 lg:px-24 bg-white">
+        <div class="max-w-[1200px] mx-auto">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl md:text-4xl lg:text-5xl font-black leading-tight tracking-tight mb-4 text-gray-800"><span class="block text-teal-600 font-black text-sm md:text-base tracking-widest uppercase mb-2">Voices</span>参加者の声</h3>
+                <p class="text-gray-500 text-[10px] sm:text-xs md:text-sm font-bold bg-gray-100 inline-block px-4 py-1.5 rounded-full shadow-sm">※就職面談会参加者アンケートより抜粋</p>
+            </div>
+            
+            <!-- Masonry Grid Layout -->
+            <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+                <!-- 1 -->
+                <div class="break-inside-avoid bg-teal-50/50 p-6 md:p-8 rounded-3xl border border-teal-50 relative group hover:bg-white hover:shadow-xl hover:border-teal-100 transition-all text-left mt-4 pt-8">
+                    <span class="material-icons-round text-teal-200 text-4xl absolute top-6 right-6 opacity-60 group-hover:text-cyan-300 transition-colors">person</span>
+                    <p class="text-gray-700 text-sm md:text-base font-medium leading-relaxed relative z-10 pt-2">堅苦しくないカジュアルな雰囲気、気になることを質問できる環境でした。</p>
+                </div>
+                <!-- 2 -->
+                <div class="break-inside-avoid bg-teal-50/50 p-6 md:p-8 rounded-3xl border border-teal-50 relative group hover:bg-white hover:shadow-xl hover:border-teal-100 transition-all text-left mt-4 pt-8">
+                    <span class="material-icons-round text-teal-200 text-4xl absolute top-6 right-6 opacity-60 group-hover:text-cyan-300 transition-colors">person</span>
+                    <p class="text-gray-700 text-sm md:text-base font-medium leading-relaxed relative z-10 pt-2">就職がまだ先であるため、具体的なイメージを全く持てていませんでした。しかし、今日参加したことで、たくさん情報が得られ、就職についても具体的なイメージが湧きました。</p>
+                </div>
+                <!-- 3 -->
+                <div class="break-inside-avoid bg-teal-50/50 p-6 md:p-8 rounded-3xl border border-teal-50 relative group hover:bg-white hover:shadow-xl hover:border-teal-100 transition-all text-left mt-4 pt-8">
+                    <span class="material-icons-round text-teal-200 text-4xl absolute top-6 right-6 opacity-60 group-hover:text-cyan-300 transition-colors">person</span>
+                    <p class="text-gray-700 text-sm md:text-base font-medium leading-relaxed relative z-10 pt-2">冊子だけでは知れなかった情報を得たり、働いている方とも直接話せたため、応募先を考えるうえで非常に参考になりました。</p>
+                </div>
+                <!-- 4 -->
+                <div class="break-inside-avoid bg-teal-50/50 p-6 md:p-8 rounded-3xl border border-teal-50 relative group hover:bg-white hover:shadow-xl hover:border-teal-100 transition-all text-left mt-4 pt-8">
+                    <span class="material-icons-round text-teal-200 text-4xl absolute top-6 right-6 opacity-60 group-hover:text-cyan-300 transition-colors">person</span>
+                    <p class="text-gray-700 text-sm md:text-base font-medium leading-relaxed relative z-10 pt-2">大学3回生です。情報収集のためだけに参加してもいいのだろうかと不安に思いましたが、業界の生の声が聞けたのでとても良かったです。</p>
+                </div>
+                <!-- 5 -->
+                <div class="break-inside-avoid bg-teal-50/50 p-6 md:p-8 rounded-3xl border border-teal-50 relative group hover:bg-white hover:shadow-xl hover:border-teal-100 transition-all text-left mt-4 pt-8">
+                    <span class="material-icons-round text-teal-200 text-4xl absolute top-6 right-6 opacity-60 group-hover:text-cyan-300 transition-colors">person</span>
+                    <p class="text-gray-700 text-sm md:text-base font-medium leading-relaxed relative z-10 pt-2">求人サイトなどに掲載されていない税理士法人も参加されていました。選考に進む機会も作ることができて良かったです。</p>
+                </div>
+                <!-- 6 -->
+                <div class="break-inside-avoid bg-teal-50/50 p-6 md:p-8 rounded-3xl border border-teal-50 relative group hover:bg-white hover:shadow-xl hover:border-teal-100 transition-all text-left mt-4 pt-8">
+                    <span class="material-icons-round text-teal-200 text-4xl absolute top-6 right-6 opacity-60 group-hover:text-cyan-300 transition-colors">person</span>
+                    <p class="text-gray-700 text-sm md:text-base font-medium leading-relaxed relative z-10 pt-2">実際に様々な事務所の方とお話しすることで、自分自身の考えが変わりました。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 開催概要 Section -->
+    <section class="scroll-fade py-24 px-6 md:px-12 lg:px-24 bg-teal-50/50">
+        <div class="max-w-[1200px] mx-auto">
+            <div class="text-left mb-12">
+                <h3 class="text-3xl md:text-4xl lg:text-5xl font-black tracking-tighter text-gray-800"><span class="block text-teal-600 font-black text-sm md:text-base tracking-widest uppercase mb-2">Event Details</span>開催概要</h3>
+            </div>
+            
+            <div class="bg-white shadow-lg border border-teal-100 w-full overflow-hidden rounded-3xl">
+                <table class="w-full text-left border-collapse text-sm md:text-base">
+                    <tbody>
+                        <tr class="border-b border-teal-50 flex flex-col sm:table-row hover:bg-teal-50/30 transition-colors">
+                            <th class="py-6 px-6 sm:py-8 sm:px-10 align-top w-full sm:w-48 lg:w-64 font-bold text-teal-600 bg-teal-50/50">日時</th>
+                            <td class="py-6 px-6 sm:py-8 sm:px-10 align-top font-medium text-gray-700 leading-relaxed">
+                                <strong class="text-xl md:text-2xl border-b-4 border-teal-400 pb-1 mb-3 inline-block font-black text-gray-800">2026年8月8日（土）</strong><br>
+                                <span class="text-base text-gray-700 font-bold">10:30～13:30（受付開始 10:00）</span><br>
+                                <span class="text-cyan-500 text-sm md:text-base font-bold block mt-2">※10:30よりオリエンテーションを開始します</span>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-teal-50 flex flex-col sm:table-row hover:bg-teal-50/30 transition-colors">
+                            <th class="py-6 px-6 sm:py-8 sm:px-10 align-top w-full sm:w-48 lg:w-64 font-bold text-teal-600 bg-teal-50/50">会場</th>
+                            <td class="py-6 px-6 sm:py-8 sm:px-10 align-top font-medium text-gray-700 leading-relaxed">
+                                <strong class="text-lg border-b-2 border-teal-200 pb-1 inline-block mb-2 text-gray-800">大原簿記専門学校大阪校本館</strong><br>
+                                <p class="text-gray-500 text-sm mb-4">〒532-0011 大阪府大阪市淀川区西中島3丁目15-22</p>
+                                <div class="bg-teal-50/70 p-4 border border-teal-100 text-sm mb-4 rounded-2xl">
+                                    ・阪急京都線 南方駅 徒歩2分<br>
+                                    ・Osaka Metro御堂筋線 西中島南方駅 徒歩4分
+                                </div>
+                                <a href="https://maps.google.com/?q=大原簿記専門学校大阪校本館" target="_blank" class="inline-flex items-center gap-1 text-teal-600 hover:text-cyan-500 font-bold transition-colors text-sm bg-teal-50 px-4 py-2 rounded-full">
+                                    <span class="material-icons-round text-lg">place</span> Googleマップで見る
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-teal-50 flex flex-col sm:table-row hover:bg-teal-50/30 transition-colors">
+                            <th class="py-6 px-6 sm:py-8 sm:px-10 align-top w-full sm:w-48 lg:w-64 font-bold text-teal-600 bg-teal-50/50">参加費</th>
+                            <td class="py-6 px-6 sm:py-8 sm:px-10 align-top font-bold text-gray-800">無料</td>
+                        </tr>
+                        <tr class="border-b border-teal-50 flex flex-col sm:table-row hover:bg-teal-50/30 transition-colors">
+                            <th class="py-6 px-6 sm:py-8 sm:px-10 align-top w-full sm:w-48 lg:w-64 font-bold text-teal-600 bg-teal-50/50">服装</th>
+                            <td class="py-6 px-6 sm:py-8 sm:px-10 align-top font-medium text-gray-700">スーツ（クールビズOK）</td>
+                        </tr>
+                        <tr class="flex flex-col sm:table-row hover:bg-teal-50/30 transition-colors">
+                            <th class="py-6 px-6 sm:py-8 sm:px-10 align-top w-full sm:w-48 lg:w-64 font-bold text-teal-600 bg-teal-50/50">持ち物</th>
+                            <td class="py-6 px-6 sm:py-8 sm:px-10 align-top font-medium text-gray-700 leading-relaxed">
+                                筆記用具・就職情報誌Win・履歴書・職務経歴書<br>
+                                <span class="text-gray-800 text-sm">（職務経歴の無い方は自己紹介書）</span>
+                                
+                                <div class="mt-6 flex flex-wrap gap-3">
+                                    <a href="files/履歴書サンプル.xlsx" download class="inline-flex items-center gap-2 border border-teal-200 bg-white px-5 py-2.5 text-xs font-bold hover:bg-teal-50 transition-colors rounded-full text-gray-600 shadow-sm hover:shadow-md">
+                                        <span class="material-icons-round text-sm text-teal-500">download</span> 履歴書サンプル
+                                    </a>
+                                    <a href="files/職務経歴書サンプル.docx" download class="inline-flex items-center gap-2 border border-teal-200 bg-white px-5 py-2.5 text-xs font-bold hover:bg-teal-50 transition-colors rounded-full text-gray-600 shadow-sm hover:shadow-md">
+                                        <span class="material-icons-round text-sm text-teal-500">download</span> 職務経歴書サンプル
+                                    </a>
+                                    <a href="files/自己紹介書サンプル.docx" download class="inline-flex items-center gap-2 border border-teal-200 bg-white px-5 py-2.5 text-xs font-bold hover:bg-teal-50 transition-colors rounded-full text-gray-600 shadow-sm hover:shadow-md">
+                                        <span class="material-icons-round text-sm text-teal-500">download</span> 自己紹介書サンプル
+                                    </a>
+                                </div>
+                                <!-- 就職情報誌Win 補足コーナー -->
+                                <div class="mt-8 bg-teal-50 border border-teal-100 p-5 md:p-6 rounded-2xl flex flex-col sm:flex-row gap-5 items-center sm:items-start group transition-all hover:bg-teal-100/50">
+                                    <div class="shrink-0 overflow-hidden rounded-lg shadow-sm border border-black/5 w-24 sm:w-28 md:w-32 group-hover:shadow-md transition-shadow">
+                                        <img src="images/win.jpg" alt="就職情報誌Win" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=200'">
+                                    </div>
+                                    <div class="flex flex-col gap-3">
+                                        <div class="font-bold text-teal-800 flex items-center gap-2 text-base md:text-lg tracking-tight">
+                                            <span class="material-icons-round text-teal-500">menu_book</span> 就職情報誌Win
+                                        </div>
+                                        <p class="text-sm md:text-base text-gray-600 leading-relaxed font-medium">税理士業界に特化した就職情報誌です。関西・九州圏を中心とした、様々な税理士法人・会計事務所の求人が掲載されています。</p>
+                                        <div class="mt-1">
+                                            <a href="#" target="_blank" class="inline-flex items-center gap-1.5 bg-white text-teal-600 border border-teal-200 px-5 py-2.5 text-xs font-bold hover:bg-teal-600 hover:text-white transition-colors rounded-full shadow-sm hover:shadow">
+                                                デジタル版を読む <span class="material-icons-round text-[14px]">open_in_new</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- 参加法人・会計事務所 -->
+    <section class="scroll-fade py-24 md:py-32 bg-white px-6 md:px-12 lg:px-24">
+        <div class="max-w-[1200px] mx-auto">
+            <div class="text-left mb-16">
+                <!-- 見出しのフォントサイズ統一 -->
+                <h3 class="text-3xl md:text-4xl lg:text-5xl font-black mb-6 tracking-tighter text-gray-800"><span class="block text-teal-600 font-black text-sm md:text-base tracking-widest uppercase mb-2">Participating Firms</span>参加法人・会計事務所</h3>
+                <p class="text-gray-500 text-sm md:text-base leading-relaxed">近畿圏を中心に、様々な税理士法人・会計事務所が参加します。特徴や魅力について、事前に確認しておきましょう。（順不同）</p>
+            </div>
+            
+            <div class="relative">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 overflow-hidden p-2 -m-2" id="firmsExpandedContainer" style="max-height: 480px; transition: max-height 0.8s cubic-bezier(0.16, 1, 0.3, 1);">
+                    <!-- JavaScriptでここにリストを展開 -->
+                </div>
+                
+                <!-- グラデーションと「もっと見る/閉じる」ボタン -->
+                <div id="firmsExpandGradient" class="absolute bottom-0 left-0 w-full h-40 firms-fade-overlay flex items-end justify-center pb-6"></div>
+                
+                <div class="flex justify-center mt-8 relative z-10 w-full" id="btnWrapper">
+                    <button id="btnFirmsExpand" class="bg-teal-600 text-white px-8 py-4 rounded-full text-sm font-bold shadow-[0_10px_20px_-10px_rgba(13, 148, 136,0.8)] md:hover:bg-teal-700 md:hover:-translate-y-1 transition-all flex items-center gap-2 border border-teal-600">
+                        すべて表示する <span class="material-icons-round text-sm">expand_more</span>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="scroll-fade py-24 px-6 md:px-12 lg:px-24 bg-teal-50/50">
+        <div class="max-w-[1200px] mx-auto flex flex-col lg:flex-row gap-16 items-start">
+            <div class="lg:w-1/3 text-left">
+                <!-- 見出しのフォントサイズ統一 -->
+                <h3 class="text-3xl md:text-4xl lg:text-5xl font-black mb-6 tracking-tighter text-gray-800"><span class="block text-teal-600 font-black text-sm md:text-base tracking-widest uppercase mb-2">FAQ</span>よくある質問</h3>
+                <p class="text-gray-500 text-sm md:text-base leading-relaxed mb-8">よくあるご質問をまとめました。<br class="hidden lg:block">他にご不明な点があれば、<br class="hidden lg:block">お気軽にお問い合わせください。</p>
+                
+                <!-- 問い合わせエリア -->
+                <div class="bg-teal-50 p-6 rounded-3xl border border-teal-100 text-left relative overflow-hidden shadow-sm">
+                    <!-- 透かしアイコンのレイヤーをz-0にして相対配置、下のテキストをz-10にして被りを防止 -->
+                    <div class="absolute -right-6 -bottom-6 text-white/60 pointer-events-none z-0">
+                        <span class="material-icons-round text-9xl">support_agent</span>
+                    </div>
+                    
+                    <div class="relative z-10">
+                        <h4 class="font-bold text-teal-800 mb-6 flex items-center gap-2"><span class="material-icons-round">help_outline</span> お問い合わせ</h4>
+                        <p class="font-bold text-gray-800 mb-4 whitespace-nowrap"><span class="material-icons-round text-teal-500 align-middle mr-2">call</span> <a href="tel:0120153069" class="hover:text-teal-600 transition-colors text-lg tracking-wider">0120-153-069</a></p>
+                        <p class="font-bold text-gray-800 break-all"><span class="material-icons-round text-teal-500 align-middle mr-2">email</span> <a href="mailto:careerstaff.osaka@o-hara.group" class="hover:text-teal-600 transition-colors text-sm">careerstaff.osaka@o-hara.group</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lg:w-2/3 w-full flex flex-col gap-4">
+                <!-- FAQ Item 1 -->
+                <details class="group bg-teal-50/50 rounded-3xl border border-teal-50 shadow-sm" open>
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none text-base md:text-lg text-gray-800 p-6 md:p-8">
+                        <span class="flex items-start gap-4 pr-6">
+                            <span class="text-teal-400 font-black">Q.</span>
+                            <span class="mt-0.5">実務未経験、資格勉強中でも参加できますか？</span>
+                        </span>
+                        <div class="bg-white rounded-full p-1 shadow-sm shrink-0 flex items-center justify-center">
+                            <span class="transition group-open:rotate-180 material-icons-round text-teal-400">expand_more</span>
+                        </div>
+                    </summary>
+                    <div class="text-gray-600 pb-6 md:pb-8 px-6 md:px-8 leading-relaxed flex items-start gap-4 text-sm md:text-base border-t border-teal-100/50 mx-2 pt-6">
+                        <span class="text-cyan-500 font-black">A.</span>
+                        <p class="mt-0.5">はい。例年未経験の方が大半です。資格についても、日商簿記のみ取得、これから受験予定の方もいらっしゃいます。</p>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 2 -->
+                <details class="group bg-teal-50/50 rounded-3xl border border-teal-50 shadow-sm">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none text-base md:text-lg text-gray-800 p-6 md:p-8">
+                        <span class="flex items-start gap-4 pr-6">
+                            <span class="text-teal-400 font-black">Q.</span>
+                            <span class="mt-0.5">履歴書などは必要ですか？</span>
+                        </span>
+                        <div class="bg-white rounded-full p-1 shadow-sm shrink-0 flex items-center justify-center">
+                            <span class="transition group-open:rotate-180 material-icons-round text-teal-400">expand_more</span>
+                        </div>
+                    </summary>
+                    <div class="text-gray-600 pb-6 md:pb-8 px-6 md:px-8 leading-relaxed flex items-start gap-4 text-sm md:text-base border-t border-teal-100/50 mx-2 pt-6">
+                        <span class="text-cyan-500 font-black">A.</span>
+                        <div class="mt-0.5">
+                            <p class="mb-5">必須ではありませんが、お持ちいただくと担当者との面談がスムーズに進みます。応募予定の事務所数分＋αを印刷してご用意ください。また、最低限の情報を記入いただける「プロフィールシート」をご持参いただいてもかまいません。<br>なお、会場にコピー機のご用意はございませんので、ご注意ください。</p>
+                            <a href="files/プロフィールシート.xlsx" download class="inline-flex items-center gap-2 border border-teal-200 bg-white px-5 py-2.5 text-xs font-bold hover:bg-teal-50 transition-colors rounded-full text-teal-600 shadow-sm">
+                                <span class="material-icons-round text-sm">download</span> プロフィールシート
+                            </a>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 3 -->
+                <details class="group bg-teal-50/50 rounded-3xl border border-teal-50 shadow-sm">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none text-base md:text-lg text-gray-800 p-6 md:p-8">
+                        <span class="flex items-start gap-4 pr-6">
+                            <span class="text-teal-400 font-black">Q.</span>
+                            <span class="mt-0.5">途中参加・途中退出は可能ですか？</span>
+                        </span>
+                        <div class="bg-white rounded-full p-1 shadow-sm shrink-0 flex items-center justify-center">
+                            <span class="transition group-open:rotate-180 material-icons-round text-teal-400">expand_more</span>
+                        </div>
+                    </summary>
+                    <div class="text-gray-600 pb-6 md:pb-8 px-6 md:px-8 leading-relaxed flex items-start gap-4 text-sm md:text-base border-t border-teal-100/50 mx-2 pt-6">
+                        <span class="text-cyan-500 font-black">A.</span>
+                        <p class="mt-0.5">はい、ご都合に合わせて自由に参加・退出いただけます。ただし、オリエンテーションは10:30より1回のみ実施となりますので、途中参加の場合は聴講いただけません。</p>
+                    </div>
+                </details>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="scroll-fade py-24 md:py-32 bg-cyan-400 text-white relative overflow-hidden m-4 md:m-8 lg:m-12 rounded-[3rem] shadow-2xl">
+        <!-- Decoration soft shapes -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+            <div class="absolute -top-20 -left-20 w-64 h-64 bg-white/30 rounded-full blur-3xl"></div>
+            <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-teal-500/30 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10 flex flex-col items-center">
+            <h2 class="text-[24px] sm:text-4xl md:text-5xl lg:text-6xl font-black mb-8 leading-tight tracking-tighter sm:tracking-tight drop-shadow-md"><span class="whitespace-nowrap sm:whitespace-normal">理想のキャリアと出会う、</span><br>特別な1日を。</h2>
+            <p class="mb-12 font-bold text-sm md:text-lg bg-black/5 px-6 py-3 rounded-full inline-block backdrop-blur-sm text-white/90 leading-relaxed md:leading-normal">当日参加も可能ですが、事前予約の方優先となっておりますので、<br class="hidden sm:block">お早めにお申し込みください。</p>
+            
+            <div class="w-full max-w-sm">
+                <a href="https://forms.gle/hx4RHBvybdSt4Qtb8" target="_blank" class="flex items-center justify-center w-full bg-white text-teal-600 px-8 py-5 md:py-6 text-base md:text-xl font-black rounded-full hover:bg-teal-50 transition-all shadow-[0_15px_30px_-10px_rgba(0,0,0,0.3)] hover:shadow-[0_20px_40px_-10px_rgba(0,0,0,0.4)] hover:-translate-y-1 group">
+                    今すぐ申し込む（無料） <span class="material-icons-round ml-3 group-hover:translate-x-2 transition-transform bg-teal-50 text-teal-500 rounded-full p-1">arrow_forward</span>
+                </a>
+                <p class="mt-6 text-xs font-bold opacity-80">※Googleフォームへ移動します</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pb-12 pt-16 mt-8 bg-transparent text-center">
+        <div class="container mx-auto px-6 max-w-[1200px]">
+            <!-- 運営会社情報 & 関連サービス -->
+            <div class="mb-10 w-full mx-auto flex flex-col gap-6">
+                <!-- Section Title -->
+                <div class="text-left mb-2">
+                    <h3 class="text-3xl md:text-4xl lg:text-5xl font-black tracking-tighter text-gray-800"><span class="block text-teal-600 font-black text-sm md:text-base tracking-widest uppercase mb-2">Company</span>運営会社</h3>
+                </div>
+                
+                <div class="bg-white p-8 md:p-10 lg:p-12 rounded-[2.5rem] shadow-sm border border-teal-100 flex flex-col gap-10">
+                    <!-- Company Info -->
+                    <div class="flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-8">
+                        <div class="flex flex-col items-center shrink-0 md:pr-8 mt-2">
+                            <img src="images/careerrogo.jpg" alt="大原キャリアスタッフ" class="h-16 md:h-20 lg:h-24 object-contain" onerror="this.style.display='none'">
+                        </div>
+                        <div class="flex flex-col items-center md:items-start flex-1 gap-4">
+                            <div>
+                                <p class="text-[16px] sm:text-xl md:text-2xl lg:text-3xl font-black text-gray-800 tracking-tighter sm:tracking-tight mb-3 whitespace-nowrap sm:whitespace-normal">大原キャリアスタッフ関西・九州</p>
+                                <p class="text-sm md:text-base text-gray-600 leading-relaxed text-left">税理士業界に精通した「資格の大原」グループの就職・転職エージェントです。20年以上にわたり、税理士業界に特化した就職・転職サポートやイベント運営を行っています。</p>
+                            </div>
+                            <div class="flex mt-2">
+                                <a href="https://www.o-hara-cs.com/" target="_blank" class="inline-flex items-center gap-1.5 text-xs md:text-sm font-bold text-teal-600 hover:text-white hover:bg-teal-500 transition-all bg-teal-50 hover:bg-teal-500 border border-teal-100 px-6 py-2.5 rounded-full shadow-sm hover:shadow-md whitespace-nowrap">
+                                    <span class="material-icons-round text-base">open_in_new</span> 公式サイトへ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Divider -->
+                    <div class="w-full h-px bg-teal-100"></div>
+                    
+                    <!-- 3 Services -->
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 text-left">
+                        <!-- Seminar -->
+                        <div class="flex flex-col gap-4">
+                            <div class="text-xs md:text-sm font-bold text-teal-700 bg-teal-50 px-4 py-2 rounded-full self-start inline-block border border-teal-100/50 shadow-sm">まずは情報収集したい方へ</div>
+                            <div class="flex flex-col h-full group">
+                                <div class="w-16 h-16 rounded-2xl bg-white border border-teal-50 flex items-center justify-center mb-6 group-hover:bg-teal-50 transition-colors shadow-sm shrink-0 overflow-hidden">
+                                    <img src="images/seminar.jpeg" alt="セミナー" class="w-8 h-8 object-contain transition-all duration-300 mix-blend-multiply group-hover:scale-110 group-hover:-translate-y-0.5">
+                                </div>
+                                <h4 class="text-lg md:text-xl font-black text-teal-800 tracking-tight mb-4">セミナー</h4>
+                                <p class="text-sm text-gray-600 leading-relaxed mb-6 font-medium">就職・転職に役立つセミナーを開催しています。<br>資格の活かし方から書類作成、面接対策まで、様々なテーマで実施中。<br>オンラインでの視聴も可能です。</p>
+                                <a href="https://www.o-hara-cs.com/#event" target="_blank" class="mt-auto inline-flex justify-center items-center gap-1.5 text-sm font-bold text-teal-700 bg-teal-50 hover:bg-teal-600 hover:text-white border border-teal-200 transition-all px-6 py-3.5 rounded-full shadow-sm hover:shadow">
+                                    開催セミナー一覧へ <span class="material-icons-round text-base">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Agent -->
+                        <div class="flex flex-col gap-4 border-t lg:border-t-0 lg:border-l border-teal-100 pt-8 lg:pt-0 lg:pl-8">
+                            <div class="text-xs md:text-sm font-bold text-teal-700 bg-teal-50 px-4 py-2 rounded-full self-start inline-block border border-teal-100/50 shadow-sm">就職・転職活動を伴走してほしい方へ</div>
+                            <div class="flex flex-col h-full group">
+                                <div class="w-16 h-16 rounded-2xl bg-white border border-teal-50 flex items-center justify-center mb-6 group-hover:bg-teal-50 transition-colors shadow-sm shrink-0 overflow-hidden">
+                                    <img src="images/agent.jpeg" alt="就職・転職エージェントサービス" class="w-8 h-8 object-contain transition-all duration-300 mix-blend-multiply group-hover:scale-110 group-hover:-translate-y-0.5">
+                                </div>
+                                <h4 class="text-[16px] sm:text-lg md:text-xl font-black text-teal-800 tracking-tighter sm:tracking-tight mb-4 whitespace-nowrap sm:whitespace-normal">就職・転職エージェントサービス</h4>
+                                <p class="text-sm text-gray-600 leading-relaxed mb-6 font-medium">税理士業界に特化した、キャリア相談や求人紹介を行っています。<br>専任アドバイザーが、一人ひとりに合わせたアドバイスをさせていただきます。</p>
+                                <a href="https://www.o-hara-cs.com/recruit/agreement.php" target="_blank" class="mt-auto inline-flex justify-center items-center gap-1.5 text-sm font-bold text-teal-700 bg-teal-50 hover:bg-teal-600 hover:text-white border border-teal-200 transition-all px-6 py-3.5 rounded-full shadow-sm hover:shadow">
+                                    サービスへ申し込む <span class="material-icons-round text-base">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Guide -->
+                        <div class="flex flex-col gap-4 border-t lg:border-t-0 lg:border-l border-teal-100 pt-8 lg:pt-0 lg:pl-8">
+                            <div class="text-xs md:text-sm font-bold text-teal-700 bg-teal-50 px-4 py-2 rounded-full self-start inline-block border border-teal-100/50 shadow-sm">自分で準備を進めたい方へ</div>
+                            <div class="flex flex-col h-full group">
+                                <div class="w-16 h-16 rounded-2xl bg-white border border-teal-50 flex items-center justify-center mb-6 group-hover:bg-teal-50 transition-colors shadow-sm shrink-0 overflow-hidden">
+                                    <img src="images/guide.jpeg" alt="はじめての税理士業界 就活ガイド" class="w-8 h-8 object-contain transition-all duration-300 mix-blend-multiply group-hover:scale-110 group-hover:-translate-y-0.5" onerror="this.src='images/guide.png'; this.onerror=null;">
+                                </div>
+                                <h4 class="text-[15px] sm:text-lg md:text-xl font-black text-teal-800 tracking-tighter sm:tracking-tight mb-4 whitespace-nowrap sm:whitespace-normal">はじめての税理士業界 就活ガイド</h4>
+                                <p class="text-sm text-gray-600 leading-relaxed mb-6 font-medium">未経験から税理士補助を目指す方向けのサポートサイトです。<br>業界理解や自己分析に活用いただけます。</p>
+                                <a href="https://ocs-ce2026.github.io/job_hunting_prep/" target="_blank" class="mt-auto inline-flex justify-center items-center gap-1.5 text-sm font-bold text-teal-700 bg-teal-50 hover:bg-teal-600 hover:text-white border border-teal-200 transition-all px-6 py-3.5 rounded-full shadow-sm hover:shadow">
+                                    ガイドを見る <span class="material-icons-round text-base">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- コピーライト -->
+            <div class="text-gray-400 text-[10px] md:text-xs font-bold tracking-widest uppercase">
+                <p>&copy; 2026 税理士法人・会計事務所 就職面談会事務局</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Close Button (Mobile) - Raised to Body Level -->
+    <button id="floatingCloseBtn" class="fixed bottom-6 right-6 z-[100] bg-white text-teal-600 border border-teal-200 px-5 py-3 rounded-full shadow-[0_15px_30px_-5px_rgba(13, 148, 136,0.25)] flex items-center gap-2 text-sm font-bold opacity-0 pointer-events-none transition-all duration-300 md:hidden translate-y-4 hover:bg-teal-50 hover:shadow-lg">
+        <span class="material-icons-round text-teal-500">expand_less</span> 閉じる
+    </button>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Header Scroll Effect
+            const header = document.getElementById('mainHeader');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.remove('bg-transparent', 'border-transparent');
+                    header.classList.add('bg-white/95', 'backdrop-blur-sm', 'shadow-sm', 'border-teal-50');
+                } else {
+                    header.classList.add('bg-transparent', 'border-transparent');
+                    header.classList.remove('bg-white/95', 'backdrop-blur-sm', 'shadow-sm', 'border-teal-50');
+                }
+            });
+
+            // Scroll Fade Animation
+            const fadeElements = document.querySelectorAll('.scroll-fade');
+            const fadeObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, {
+                root: null,
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px"
+            });
+            fadeElements.forEach(el => fadeObserver.observe(el));
+            // Firms Data
+            const firms = [
+                "PwC税理士法人","KPMG税理士法人","デロイト トーマツ税理士法人","税理士法人山田＆パートナーズ","辻・本郷 税理士法人",
+                "日本経営グループ","税理士法人ゆびすい","税理士法人FP総合研究所","税理士法人be","税理士法人京都経営",
+                "御堂筋税理士法人","税理士法人トータルマネジメントブレーン","ほまれ税理士法人","税理士法人松岡会計事務所","日本クレアス税理士法人",
+                "税理士法人エスネットワークス","税理士法人久保田会計事務所","アイネックス税理士法人","アンテリジャンス税理士法人","山田コンサルティンググループ株式会社",
+                "ひかり税理士法人","熊谷宏臣税理士事務所","税理士法人カオス","MGS税理士法人","税理士法人ティグレパートナーズ",
+                "ウィズアップ税理士法人","のぞみ税理士法人"
+            ];
+
+            const gridContainer = document.getElementById('firmsExpandedContainer');
+            
+            // Render Firms with Links
+            firms.forEach(f => {
+                gridContainer.innerHTML += `
+                <div class="p-6 md:p-8 bg-white flex flex-col justify-between hover:bg-teal-50 transition-all min-h-[140px] group border border-teal-100 hover:border-teal-300 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-1">
+                    <div class="font-black text-sm md:text-base text-gray-800 leading-tight group-hover:text-teal-600 transition-colors text-center md:text-left">${f}</div>
+                    <div class="flex gap-4 md:gap-5 text-gray-400 mt-6 md:mt-8 border-t border-teal-50 pt-5 justify-center md:justify-start">
+                        <a href="#" class="flex flex-col items-center gap-1.5 hover:text-cyan-500 transition-colors group/link w-12 cursor-pointer">
+                            <span class="material-icons-round text-xl bg-teal-50 rounded-2xl p-2.5 text-teal-400 group-hover/link:bg-teal-100 group-hover/link:text-teal-600 transition-colors w-full text-center">language</span>
+                            <span class="text-[10px] font-bold">HP</span>
+                        </a>
+                        <a href="#" class="flex flex-col items-center gap-1.5 hover:text-cyan-500 transition-colors group/link w-16 cursor-pointer">
+                            <span class="material-icons-round text-xl bg-teal-50 rounded-2xl p-2.5 text-teal-400 group-hover/link:bg-teal-100 group-hover/link:text-teal-600 transition-colors w-full text-center">work</span>
+                            <span class="text-[10px] font-bold tracking-tight">求人情報</span>
+                        </a>
+                        <a href="#" class="flex flex-col items-center gap-1.5 hover:text-cyan-500 transition-colors group/link w-16 cursor-pointer">
+                            <span class="material-icons-round text-xl bg-teal-50 rounded-2xl p-2.5 text-teal-400 group-hover/link:bg-teal-100 group-hover/link:text-teal-600 transition-colors w-full text-center">smart_display</span>
+                            <span class="text-[10px] font-bold tracking-tight">紹介動画</span>
+                        </a>
+                    </div>
+                </div>`;
+            });
+
+            // "すべて表示する / 閉じる" Logic
+            const btnExpand = document.getElementById('btnFirmsExpand');
+            const gradientOverlay = document.getElementById('firmsExpandGradient');
+            const btnWrapper = document.getElementById('btnWrapper');
+            const floatingCloseBtn = document.getElementById('floatingCloseBtn');
+            const firmsSection = gridContainer ? gridContainer.closest('section') : null;
+            
+            let isFirmsExpanded = false;
+            let isFirmsSectionVisible = false;
+
+            const updateFloatingBtnVisibility = () => {
+                if (!floatingCloseBtn || !isFirmsExpanded) {
+                    if (floatingCloseBtn) {
+                        floatingCloseBtn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+                        floatingCloseBtn.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+                    }
+                    return;
+                }
+                
+                // 展開中の場合の表示判定
+                const rect = gridContainer.getBoundingClientRect();
+                // コンテナの上部が画面中央より上にあり、かつ下部が画面下部より下にある場合（つまり要素の中間を見ている時）
+                const topInView = rect.top < window.innerHeight / 2;
+                const bottomInView = rect.bottom > window.innerHeight;
+                
+                if (topInView && bottomInView) {
+                    floatingCloseBtn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+                    floatingCloseBtn.classList.add('opacity-100', 'pointer-events-auto', 'translate-y-0');
+                } else {
+                    floatingCloseBtn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+                    floatingCloseBtn.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+                }
+            };
+
+            window.addEventListener('scroll', updateFloatingBtnVisibility);
+            window.addEventListener('resize', updateFloatingBtnVisibility);
+            
+            if(btnExpand && gridContainer) {
+                btnExpand.addEventListener('click', () => {
+                    isFirmsExpanded = gridContainer.classList.toggle('expanded');
+                    
+                    if (isFirmsExpanded) {
+                        // 展開
+                        gridContainer.style.maxHeight = gridContainer.scrollHeight + 'px';
+                        gradientOverlay.style.opacity = '0';
+                        gradientOverlay.style.pointerEvents = 'none';
+                        btnExpand.innerHTML = '閉じる <span class="material-icons-round text-sm">expand_less</span>';
+                        
+                        btnExpand.classList.remove('bg-teal-600', 'text-white', 'md:hover:bg-teal-700');
+                        btnExpand.classList.add('bg-white', 'text-teal-600', 'border-teal-200', 'md:hover:bg-teal-50');
+                        btnExpand.style.boxShadow = 'none';
+                        
+                        updateFloatingBtnVisibility();
+                        
+                        setTimeout(() => {
+                            if(gridContainer.classList.contains('expanded')) {
+                                gridContainer.style.maxHeight = 'none';
+                            }
+                        }, 800);
+                        
+                    } else {
+                        // 折りたたみ（閉じる）
+                        gridContainer.style.maxHeight = gridContainer.scrollHeight + 'px'; // 一旦現在の高さに固定
+                        void gridContainer.offsetWidth; // リフローを強制してアニメーションを発火させる
+                        gridContainer.style.maxHeight = '480px';
+                        
+                        gradientOverlay.style.opacity = '1';
+                        gradientOverlay.style.pointerEvents = 'auto';
+                        btnExpand.innerHTML = 'すべて表示する <span class="material-icons-round text-sm">expand_more</span>';
+                        
+                        btnExpand.classList.add('bg-teal-600', 'text-white', 'md:hover:bg-teal-700');
+                        btnExpand.classList.remove('bg-white', 'text-teal-600', 'border-teal-200', 'md:hover:bg-teal-50');
+                        btnExpand.style.boxShadow = '0 10px 20px -10px rgba(13, 148, 136,0.8)';
+                        
+                        updateFloatingBtnVisibility();
+                        
+                        // セクションの上部にスクロールを戻す
+                        const sectionTop = gridContainer.closest('section').getBoundingClientRect().top + window.scrollY;
+                        window.scrollTo({
+                            top: sectionTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+                
+                if (floatingCloseBtn) {
+                    floatingCloseBtn.addEventListener('click', () => {
+                        btnExpand.click();
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+</html>
